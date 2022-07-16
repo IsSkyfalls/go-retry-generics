@@ -57,3 +57,17 @@ func TestRetry_pointer(t *testing.T) {
 	assert.Equal(t, 4, res.v)
 	assert.NoError(t, err)
 }
+
+var noOptimize = 0
+
+func BenchmarkRetryAlloc(b *testing.B) {
+	b.ReportAllocs()
+	for i := 0; i < b.N; i++ {
+		noOptimize, _ = Try1to1(func(x int) (int, error) {
+			return x * 2, nil
+		}).ForTimes(10).Run(i)
+		if noOptimize != i*2 {
+			b.Fatal("wrong result")
+		}
+	}
+}
