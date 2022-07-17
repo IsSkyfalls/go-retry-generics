@@ -1,4 +1,4 @@
-module go-retry-generics
+module github.com/IsSkyfalls/go-retry-generics
 
 go 1.18
 
