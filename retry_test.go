@@ -1,8 +1,9 @@
-package go_retry_generics
+package main
 
 import (
 	"errors"
 	"github.com/stretchr/testify/assert"
+	. "go-retry-generics/retry"
 	"testing"
 )
 

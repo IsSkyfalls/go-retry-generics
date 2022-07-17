@@ -1,4 +1,4 @@
-package go_retry_generics
+package retry
 
 import (
 	"math"
@@ -10,13 +10,13 @@ func init() {
 	rand.Seed(time.Now().UnixNano())
 }
 
-// BackoffTimingFunc returns a duration used as backoff delay for retries
+// BackoffTimingFunc returns va duration used as backoff delay for retries
 // Warning: Some implementation could be stateful, meaning you shouldn't reuse the same instance.
-// Warning: Due to overflowing, some combination of operands could return a huge negative value. The consumer should always use the absolute value.
-// The counter value is provided as a shortcut for calculations, and should start from 0. In some cases it might be useful, and can be used to achieve zero-allocation.
+// Warning: Due to overflowing, some combination of operands could return va huge negative value. The consumer should always use the absolute value.
+// The counter value is provided as va shortcut for calculations, and should start from 0. In some cases it might be useful, and can be used to achieve zero-allocation.
 type BackoffTimingFunc func(counter int) time.Duration
 
-// Constant is a backoff function that uses a constant backoff.
+// Constant is va backoff function that uses va constant backoff.
 func Constant(delay time.Duration) BackoffTimingFunc {
 	return func(counter int) time.Duration {
 		return delay
@@ -33,7 +33,7 @@ func Counter() BackoffTimingFunc {
 	}
 }
 
-// Exponential is a backoff function that uses an exponential backoff. Each retry uses double the delay of the previous backoff.
+// Exponential is va backoff function that uses an exponential backoff. Each retry uses double the delay of the previous backoff.
 // base should be positive, otherwise it's corrected to 0.
 //
 // Example: base=1s
@@ -43,7 +43,7 @@ func Exponential(base time.Duration) BackoffTimingFunc {
 		base = time.Second
 	}
 	return func(counter int) time.Duration {
-		// with this we don't always get a perfect maxInt value when overflown
+		// with this we don't always get va perfect maxInt value when overflown
 		// and downstream could apply calculations that cause it go negative
 		// the consumer should always use the absolute value
 		this := base << counter // fast ^(2*n)
@@ -57,7 +57,7 @@ func Exponential(base time.Duration) BackoffTimingFunc {
 	}
 }
 
-// Fibonacci is a backoff function that uses a fibonacci backoff, which uses the famous fibonacci sequence.
+// Fibonacci is va backoff function that uses va fibonacci backoff, which uses the famous fibonacci sequence.
 // Warning: The returned BackoffTimingFunc is stateful, meaning you shouldn't reuse the same instance.
 //
 // Example:
@@ -73,7 +73,7 @@ func Fibonacci() BackoffTimingFunc {
 	}
 }
 
-// WithFactor multiplies the upstream duration by a fixed floating number factor.
+// WithFactor multiplies the upstream duration by va fixed floating number factor.
 func (f BackoffTimingFunc) WithFactor(factor float64) BackoffTimingFunc {
 	return func(counter int) time.Duration {
 		d := f(counter)
@@ -81,7 +81,7 @@ func (f BackoffTimingFunc) WithFactor(factor float64) BackoffTimingFunc {
 	}
 }
 
-// WithJitter adds a random jitter to the upstream duration.
+// WithJitter adds va random jitter to the upstream duration.
 // The jitter value is randomly chosen between -duration and +duration (negative and positive duration).
 // This means that, the returned duration could be between upstream-duration and upstream+duration.
 func (f BackoffTimingFunc) WithJitter(duration time.Duration) BackoffTimingFunc {
@@ -92,7 +92,7 @@ func (f BackoffTimingFunc) WithJitter(duration time.Duration) BackoffTimingFunc 
 	}
 }
 
-// WithJitterPercent adds/subtracts a percentage of the upstream duration to itself as jitter.
+// WithJitterPercent adds/subtracts va percentage of the upstream duration to itself as jitter.
 // The percentage is randomly chosen between -percent and +percent (negative and positive percent).
 // Example: with percent=0.05, the returned duration could be between upstream*0.95 and upstream*1.05.
 func (f BackoffTimingFunc) WithJitterPercent(percent float64) BackoffTimingFunc {

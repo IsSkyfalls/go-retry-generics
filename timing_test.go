@@ -1,7 +1,8 @@
-package go_retry_generics
+package main
 
 import (
 	"github.com/stretchr/testify/assert"
+	. "go-retry-generics/retry"
 	"math"
 	"testing"
 	"time"
