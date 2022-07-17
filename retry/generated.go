@@ -16,7 +16,7 @@ func Try8to8[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TA7 
 	return &retry8to8[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry8to8[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]) ForTimes(times int) *retry8to8[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7] {
@@ -59,7 +59,7 @@ func Try8to7[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TA7 
 	return &retry8to7[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2, TR3, TR4, TR5, TR6]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry8to7[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2, TR3, TR4, TR5, TR6]) ForTimes(times int) *retry8to7[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2, TR3, TR4, TR5, TR6] {
@@ -101,7 +101,7 @@ func Try8to6[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TA7 
 	return &retry8to6[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2, TR3, TR4, TR5]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry8to6[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2, TR3, TR4, TR5]) ForTimes(times int) *retry8to6[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2, TR3, TR4, TR5] {
@@ -142,7 +142,7 @@ func Try8to5[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TA7 
 	return &retry8to5[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2, TR3, TR4]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry8to5[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2, TR3, TR4]) ForTimes(times int) *retry8to5[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2, TR3, TR4] {
@@ -182,7 +182,7 @@ func Try8to4[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TA7 
 	return &retry8to4[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2, TR3]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry8to4[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2, TR3]) ForTimes(times int) *retry8to4[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2, TR3] {
@@ -221,7 +221,7 @@ func Try8to3[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TA7 
 	return &retry8to3[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry8to3[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2]) ForTimes(times int) *retry8to3[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1, TR2] {
@@ -259,7 +259,7 @@ func Try8to2[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TA7 
 	return &retry8to2[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry8to2[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1]) ForTimes(times int) *retry8to2[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0, TR1] {
@@ -296,7 +296,7 @@ func Try8to1[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TA7 
 	return &retry8to1[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry8to1[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0]) ForTimes(times int) *retry8to1[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7, TR0] {
@@ -332,7 +332,7 @@ func Try8to0[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TA7 
 	return &retry8to0[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry8to0[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7]) ForTimes(times int) *retry8to0[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TA7] {
@@ -367,7 +367,7 @@ func Try7to8[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TR0 
 	return &retry7to8[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry7to8[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]) ForTimes(times int) *retry7to8[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7] {
@@ -410,7 +410,7 @@ func Try7to7[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TR0 
 	return &retry7to7[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2, TR3, TR4, TR5, TR6]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry7to7[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2, TR3, TR4, TR5, TR6]) ForTimes(times int) *retry7to7[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2, TR3, TR4, TR5, TR6] {
@@ -452,7 +452,7 @@ func Try7to6[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TR0 
 	return &retry7to6[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2, TR3, TR4, TR5]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry7to6[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2, TR3, TR4, TR5]) ForTimes(times int) *retry7to6[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2, TR3, TR4, TR5] {
@@ -493,7 +493,7 @@ func Try7to5[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TR0 
 	return &retry7to5[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2, TR3, TR4]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry7to5[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2, TR3, TR4]) ForTimes(times int) *retry7to5[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2, TR3, TR4] {
@@ -533,7 +533,7 @@ func Try7to4[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TR0 
 	return &retry7to4[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2, TR3]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry7to4[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2, TR3]) ForTimes(times int) *retry7to4[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2, TR3] {
@@ -572,7 +572,7 @@ func Try7to3[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TR0 
 	return &retry7to3[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry7to3[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2]) ForTimes(times int) *retry7to3[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1, TR2] {
@@ -610,7 +610,7 @@ func Try7to2[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TR0 
 	return &retry7to2[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry7to2[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1]) ForTimes(times int) *retry7to2[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0, TR1] {
@@ -647,7 +647,7 @@ func Try7to1[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any, TR0 
 	return &retry7to1[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry7to1[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0]) ForTimes(times int) *retry7to1[TA0, TA1, TA2, TA3, TA4, TA5, TA6, TR0] {
@@ -683,7 +683,7 @@ func Try7to0[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TA6 any](f fu
 	return &retry7to0[TA0, TA1, TA2, TA3, TA4, TA5, TA6]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry7to0[TA0, TA1, TA2, TA3, TA4, TA5, TA6]) ForTimes(times int) *retry7to0[TA0, TA1, TA2, TA3, TA4, TA5, TA6] {
@@ -718,7 +718,7 @@ func Try6to8[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TR0 any, TR1 
 	return &retry6to8[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry6to8[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]) ForTimes(times int) *retry6to8[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7] {
@@ -761,7 +761,7 @@ func Try6to7[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TR0 any, TR1 
 	return &retry6to7[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2, TR3, TR4, TR5, TR6]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry6to7[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2, TR3, TR4, TR5, TR6]) ForTimes(times int) *retry6to7[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2, TR3, TR4, TR5, TR6] {
@@ -803,7 +803,7 @@ func Try6to6[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TR0 any, TR1 
 	return &retry6to6[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2, TR3, TR4, TR5]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry6to6[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2, TR3, TR4, TR5]) ForTimes(times int) *retry6to6[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2, TR3, TR4, TR5] {
@@ -844,7 +844,7 @@ func Try6to5[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TR0 any, TR1 
 	return &retry6to5[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2, TR3, TR4]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry6to5[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2, TR3, TR4]) ForTimes(times int) *retry6to5[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2, TR3, TR4] {
@@ -884,7 +884,7 @@ func Try6to4[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TR0 any, TR1 
 	return &retry6to4[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2, TR3]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry6to4[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2, TR3]) ForTimes(times int) *retry6to4[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2, TR3] {
@@ -923,7 +923,7 @@ func Try6to3[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TR0 any, TR1 
 	return &retry6to3[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry6to3[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2]) ForTimes(times int) *retry6to3[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1, TR2] {
@@ -961,7 +961,7 @@ func Try6to2[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TR0 any, TR1 
 	return &retry6to2[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry6to2[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1]) ForTimes(times int) *retry6to2[TA0, TA1, TA2, TA3, TA4, TA5, TR0, TR1] {
@@ -998,7 +998,7 @@ func Try6to1[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any, TR0 any](f fu
 	return &retry6to1[TA0, TA1, TA2, TA3, TA4, TA5, TR0]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry6to1[TA0, TA1, TA2, TA3, TA4, TA5, TR0]) ForTimes(times int) *retry6to1[TA0, TA1, TA2, TA3, TA4, TA5, TR0] {
@@ -1034,7 +1034,7 @@ func Try6to0[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TA5 any](f func6to0[TA
 	return &retry6to0[TA0, TA1, TA2, TA3, TA4, TA5]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry6to0[TA0, TA1, TA2, TA3, TA4, TA5]) ForTimes(times int) *retry6to0[TA0, TA1, TA2, TA3, TA4, TA5] {
@@ -1069,7 +1069,7 @@ func Try5to8[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TR0 any, TR1 any, TR2 
 	return &retry5to8[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry5to8[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]) ForTimes(times int) *retry5to8[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7] {
@@ -1112,7 +1112,7 @@ func Try5to7[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TR0 any, TR1 any, TR2 
 	return &retry5to7[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2, TR3, TR4, TR5, TR6]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry5to7[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2, TR3, TR4, TR5, TR6]) ForTimes(times int) *retry5to7[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2, TR3, TR4, TR5, TR6] {
@@ -1154,7 +1154,7 @@ func Try5to6[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TR0 any, TR1 any, TR2 
 	return &retry5to6[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2, TR3, TR4, TR5]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry5to6[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2, TR3, TR4, TR5]) ForTimes(times int) *retry5to6[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2, TR3, TR4, TR5] {
@@ -1195,7 +1195,7 @@ func Try5to5[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TR0 any, TR1 any, TR2 
 	return &retry5to5[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2, TR3, TR4]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry5to5[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2, TR3, TR4]) ForTimes(times int) *retry5to5[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2, TR3, TR4] {
@@ -1235,7 +1235,7 @@ func Try5to4[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TR0 any, TR1 any, TR2 
 	return &retry5to4[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2, TR3]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry5to4[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2, TR3]) ForTimes(times int) *retry5to4[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2, TR3] {
@@ -1274,7 +1274,7 @@ func Try5to3[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TR0 any, TR1 any, TR2 
 	return &retry5to3[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry5to3[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2]) ForTimes(times int) *retry5to3[TA0, TA1, TA2, TA3, TA4, TR0, TR1, TR2] {
@@ -1312,7 +1312,7 @@ func Try5to2[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TR0 any, TR1 any](f fu
 	return &retry5to2[TA0, TA1, TA2, TA3, TA4, TR0, TR1]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry5to2[TA0, TA1, TA2, TA3, TA4, TR0, TR1]) ForTimes(times int) *retry5to2[TA0, TA1, TA2, TA3, TA4, TR0, TR1] {
@@ -1349,7 +1349,7 @@ func Try5to1[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any, TR0 any](f func5to1[TA
 	return &retry5to1[TA0, TA1, TA2, TA3, TA4, TR0]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry5to1[TA0, TA1, TA2, TA3, TA4, TR0]) ForTimes(times int) *retry5to1[TA0, TA1, TA2, TA3, TA4, TR0] {
@@ -1385,7 +1385,7 @@ func Try5to0[TA0 any, TA1 any, TA2 any, TA3 any, TA4 any](f func5to0[TA0, TA1, T
 	return &retry5to0[TA0, TA1, TA2, TA3, TA4]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry5to0[TA0, TA1, TA2, TA3, TA4]) ForTimes(times int) *retry5to0[TA0, TA1, TA2, TA3, TA4] {
@@ -1420,7 +1420,7 @@ func Try4to8[TA0 any, TA1 any, TA2 any, TA3 any, TR0 any, TR1 any, TR2 any, TR3 
 	return &retry4to8[TA0, TA1, TA2, TA3, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry4to8[TA0, TA1, TA2, TA3, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]) ForTimes(times int) *retry4to8[TA0, TA1, TA2, TA3, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7] {
@@ -1463,7 +1463,7 @@ func Try4to7[TA0 any, TA1 any, TA2 any, TA3 any, TR0 any, TR1 any, TR2 any, TR3 
 	return &retry4to7[TA0, TA1, TA2, TA3, TR0, TR1, TR2, TR3, TR4, TR5, TR6]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry4to7[TA0, TA1, TA2, TA3, TR0, TR1, TR2, TR3, TR4, TR5, TR6]) ForTimes(times int) *retry4to7[TA0, TA1, TA2, TA3, TR0, TR1, TR2, TR3, TR4, TR5, TR6] {
@@ -1505,7 +1505,7 @@ func Try4to6[TA0 any, TA1 any, TA2 any, TA3 any, TR0 any, TR1 any, TR2 any, TR3 
 	return &retry4to6[TA0, TA1, TA2, TA3, TR0, TR1, TR2, TR3, TR4, TR5]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry4to6[TA0, TA1, TA2, TA3, TR0, TR1, TR2, TR3, TR4, TR5]) ForTimes(times int) *retry4to6[TA0, TA1, TA2, TA3, TR0, TR1, TR2, TR3, TR4, TR5] {
@@ -1546,7 +1546,7 @@ func Try4to5[TA0 any, TA1 any, TA2 any, TA3 any, TR0 any, TR1 any, TR2 any, TR3 
 	return &retry4to5[TA0, TA1, TA2, TA3, TR0, TR1, TR2, TR3, TR4]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry4to5[TA0, TA1, TA2, TA3, TR0, TR1, TR2, TR3, TR4]) ForTimes(times int) *retry4to5[TA0, TA1, TA2, TA3, TR0, TR1, TR2, TR3, TR4] {
@@ -1586,7 +1586,7 @@ func Try4to4[TA0 any, TA1 any, TA2 any, TA3 any, TR0 any, TR1 any, TR2 any, TR3 
 	return &retry4to4[TA0, TA1, TA2, TA3, TR0, TR1, TR2, TR3]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry4to4[TA0, TA1, TA2, TA3, TR0, TR1, TR2, TR3]) ForTimes(times int) *retry4to4[TA0, TA1, TA2, TA3, TR0, TR1, TR2, TR3] {
@@ -1625,7 +1625,7 @@ func Try4to3[TA0 any, TA1 any, TA2 any, TA3 any, TR0 any, TR1 any, TR2 any](f fu
 	return &retry4to3[TA0, TA1, TA2, TA3, TR0, TR1, TR2]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry4to3[TA0, TA1, TA2, TA3, TR0, TR1, TR2]) ForTimes(times int) *retry4to3[TA0, TA1, TA2, TA3, TR0, TR1, TR2] {
@@ -1663,7 +1663,7 @@ func Try4to2[TA0 any, TA1 any, TA2 any, TA3 any, TR0 any, TR1 any](f func4to2[TA
 	return &retry4to2[TA0, TA1, TA2, TA3, TR0, TR1]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry4to2[TA0, TA1, TA2, TA3, TR0, TR1]) ForTimes(times int) *retry4to2[TA0, TA1, TA2, TA3, TR0, TR1] {
@@ -1700,7 +1700,7 @@ func Try4to1[TA0 any, TA1 any, TA2 any, TA3 any, TR0 any](f func4to1[TA0, TA1, T
 	return &retry4to1[TA0, TA1, TA2, TA3, TR0]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry4to1[TA0, TA1, TA2, TA3, TR0]) ForTimes(times int) *retry4to1[TA0, TA1, TA2, TA3, TR0] {
@@ -1736,7 +1736,7 @@ func Try4to0[TA0 any, TA1 any, TA2 any, TA3 any](f func4to0[TA0, TA1, TA2, TA3])
 	return &retry4to0[TA0, TA1, TA2, TA3]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry4to0[TA0, TA1, TA2, TA3]) ForTimes(times int) *retry4to0[TA0, TA1, TA2, TA3] {
@@ -1771,7 +1771,7 @@ func Try3to8[TA0 any, TA1 any, TA2 any, TR0 any, TR1 any, TR2 any, TR3 any, TR4 
 	return &retry3to8[TA0, TA1, TA2, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry3to8[TA0, TA1, TA2, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]) ForTimes(times int) *retry3to8[TA0, TA1, TA2, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7] {
@@ -1814,7 +1814,7 @@ func Try3to7[TA0 any, TA1 any, TA2 any, TR0 any, TR1 any, TR2 any, TR3 any, TR4 
 	return &retry3to7[TA0, TA1, TA2, TR0, TR1, TR2, TR3, TR4, TR5, TR6]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry3to7[TA0, TA1, TA2, TR0, TR1, TR2, TR3, TR4, TR5, TR6]) ForTimes(times int) *retry3to7[TA0, TA1, TA2, TR0, TR1, TR2, TR3, TR4, TR5, TR6] {
@@ -1856,7 +1856,7 @@ func Try3to6[TA0 any, TA1 any, TA2 any, TR0 any, TR1 any, TR2 any, TR3 any, TR4 
 	return &retry3to6[TA0, TA1, TA2, TR0, TR1, TR2, TR3, TR4, TR5]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry3to6[TA0, TA1, TA2, TR0, TR1, TR2, TR3, TR4, TR5]) ForTimes(times int) *retry3to6[TA0, TA1, TA2, TR0, TR1, TR2, TR3, TR4, TR5] {
@@ -1897,7 +1897,7 @@ func Try3to5[TA0 any, TA1 any, TA2 any, TR0 any, TR1 any, TR2 any, TR3 any, TR4 
 	return &retry3to5[TA0, TA1, TA2, TR0, TR1, TR2, TR3, TR4]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry3to5[TA0, TA1, TA2, TR0, TR1, TR2, TR3, TR4]) ForTimes(times int) *retry3to5[TA0, TA1, TA2, TR0, TR1, TR2, TR3, TR4] {
@@ -1937,7 +1937,7 @@ func Try3to4[TA0 any, TA1 any, TA2 any, TR0 any, TR1 any, TR2 any, TR3 any](f fu
 	return &retry3to4[TA0, TA1, TA2, TR0, TR1, TR2, TR3]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry3to4[TA0, TA1, TA2, TR0, TR1, TR2, TR3]) ForTimes(times int) *retry3to4[TA0, TA1, TA2, TR0, TR1, TR2, TR3] {
@@ -1976,7 +1976,7 @@ func Try3to3[TA0 any, TA1 any, TA2 any, TR0 any, TR1 any, TR2 any](f func3to3[TA
 	return &retry3to3[TA0, TA1, TA2, TR0, TR1, TR2]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry3to3[TA0, TA1, TA2, TR0, TR1, TR2]) ForTimes(times int) *retry3to3[TA0, TA1, TA2, TR0, TR1, TR2] {
@@ -2014,7 +2014,7 @@ func Try3to2[TA0 any, TA1 any, TA2 any, TR0 any, TR1 any](f func3to2[TA0, TA1, T
 	return &retry3to2[TA0, TA1, TA2, TR0, TR1]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry3to2[TA0, TA1, TA2, TR0, TR1]) ForTimes(times int) *retry3to2[TA0, TA1, TA2, TR0, TR1] {
@@ -2051,7 +2051,7 @@ func Try3to1[TA0 any, TA1 any, TA2 any, TR0 any](f func3to1[TA0, TA1, TA2, TR0])
 	return &retry3to1[TA0, TA1, TA2, TR0]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry3to1[TA0, TA1, TA2, TR0]) ForTimes(times int) *retry3to1[TA0, TA1, TA2, TR0] {
@@ -2087,7 +2087,7 @@ func Try3to0[TA0 any, TA1 any, TA2 any](f func3to0[TA0, TA1, TA2]) *retry3to0[TA
 	return &retry3to0[TA0, TA1, TA2]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry3to0[TA0, TA1, TA2]) ForTimes(times int) *retry3to0[TA0, TA1, TA2] {
@@ -2122,7 +2122,7 @@ func Try2to8[TA0 any, TA1 any, TR0 any, TR1 any, TR2 any, TR3 any, TR4 any, TR5 
 	return &retry2to8[TA0, TA1, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry2to8[TA0, TA1, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]) ForTimes(times int) *retry2to8[TA0, TA1, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7] {
@@ -2165,7 +2165,7 @@ func Try2to7[TA0 any, TA1 any, TR0 any, TR1 any, TR2 any, TR3 any, TR4 any, TR5 
 	return &retry2to7[TA0, TA1, TR0, TR1, TR2, TR3, TR4, TR5, TR6]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry2to7[TA0, TA1, TR0, TR1, TR2, TR3, TR4, TR5, TR6]) ForTimes(times int) *retry2to7[TA0, TA1, TR0, TR1, TR2, TR3, TR4, TR5, TR6] {
@@ -2207,7 +2207,7 @@ func Try2to6[TA0 any, TA1 any, TR0 any, TR1 any, TR2 any, TR3 any, TR4 any, TR5 
 	return &retry2to6[TA0, TA1, TR0, TR1, TR2, TR3, TR4, TR5]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry2to6[TA0, TA1, TR0, TR1, TR2, TR3, TR4, TR5]) ForTimes(times int) *retry2to6[TA0, TA1, TR0, TR1, TR2, TR3, TR4, TR5] {
@@ -2248,7 +2248,7 @@ func Try2to5[TA0 any, TA1 any, TR0 any, TR1 any, TR2 any, TR3 any, TR4 any](f fu
 	return &retry2to5[TA0, TA1, TR0, TR1, TR2, TR3, TR4]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry2to5[TA0, TA1, TR0, TR1, TR2, TR3, TR4]) ForTimes(times int) *retry2to5[TA0, TA1, TR0, TR1, TR2, TR3, TR4] {
@@ -2288,7 +2288,7 @@ func Try2to4[TA0 any, TA1 any, TR0 any, TR1 any, TR2 any, TR3 any](f func2to4[TA
 	return &retry2to4[TA0, TA1, TR0, TR1, TR2, TR3]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry2to4[TA0, TA1, TR0, TR1, TR2, TR3]) ForTimes(times int) *retry2to4[TA0, TA1, TR0, TR1, TR2, TR3] {
@@ -2327,7 +2327,7 @@ func Try2to3[TA0 any, TA1 any, TR0 any, TR1 any, TR2 any](f func2to3[TA0, TA1, T
 	return &retry2to3[TA0, TA1, TR0, TR1, TR2]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry2to3[TA0, TA1, TR0, TR1, TR2]) ForTimes(times int) *retry2to3[TA0, TA1, TR0, TR1, TR2] {
@@ -2365,7 +2365,7 @@ func Try2to2[TA0 any, TA1 any, TR0 any, TR1 any](f func2to2[TA0, TA1, TR0, TR1])
 	return &retry2to2[TA0, TA1, TR0, TR1]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry2to2[TA0, TA1, TR0, TR1]) ForTimes(times int) *retry2to2[TA0, TA1, TR0, TR1] {
@@ -2402,7 +2402,7 @@ func Try2to1[TA0 any, TA1 any, TR0 any](f func2to1[TA0, TA1, TR0]) *retry2to1[TA
 	return &retry2to1[TA0, TA1, TR0]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry2to1[TA0, TA1, TR0]) ForTimes(times int) *retry2to1[TA0, TA1, TR0] {
@@ -2438,7 +2438,7 @@ func Try2to0[TA0 any, TA1 any](f func2to0[TA0, TA1]) *retry2to0[TA0, TA1] {
 	return &retry2to0[TA0, TA1]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry2to0[TA0, TA1]) ForTimes(times int) *retry2to0[TA0, TA1] {
@@ -2473,7 +2473,7 @@ func Try1to8[TA0 any, TR0 any, TR1 any, TR2 any, TR3 any, TR4 any, TR5 any, TR6 
 	return &retry1to8[TA0, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry1to8[TA0, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]) ForTimes(times int) *retry1to8[TA0, TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7] {
@@ -2516,7 +2516,7 @@ func Try1to7[TA0 any, TR0 any, TR1 any, TR2 any, TR3 any, TR4 any, TR5 any, TR6 
 	return &retry1to7[TA0, TR0, TR1, TR2, TR3, TR4, TR5, TR6]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry1to7[TA0, TR0, TR1, TR2, TR3, TR4, TR5, TR6]) ForTimes(times int) *retry1to7[TA0, TR0, TR1, TR2, TR3, TR4, TR5, TR6] {
@@ -2558,7 +2558,7 @@ func Try1to6[TA0 any, TR0 any, TR1 any, TR2 any, TR3 any, TR4 any, TR5 any](f fu
 	return &retry1to6[TA0, TR0, TR1, TR2, TR3, TR4, TR5]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry1to6[TA0, TR0, TR1, TR2, TR3, TR4, TR5]) ForTimes(times int) *retry1to6[TA0, TR0, TR1, TR2, TR3, TR4, TR5] {
@@ -2599,7 +2599,7 @@ func Try1to5[TA0 any, TR0 any, TR1 any, TR2 any, TR3 any, TR4 any](f func1to5[TA
 	return &retry1to5[TA0, TR0, TR1, TR2, TR3, TR4]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry1to5[TA0, TR0, TR1, TR2, TR3, TR4]) ForTimes(times int) *retry1to5[TA0, TR0, TR1, TR2, TR3, TR4] {
@@ -2639,7 +2639,7 @@ func Try1to4[TA0 any, TR0 any, TR1 any, TR2 any, TR3 any](f func1to4[TA0, TR0, T
 	return &retry1to4[TA0, TR0, TR1, TR2, TR3]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry1to4[TA0, TR0, TR1, TR2, TR3]) ForTimes(times int) *retry1to4[TA0, TR0, TR1, TR2, TR3] {
@@ -2678,7 +2678,7 @@ func Try1to3[TA0 any, TR0 any, TR1 any, TR2 any](f func1to3[TA0, TR0, TR1, TR2])
 	return &retry1to3[TA0, TR0, TR1, TR2]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry1to3[TA0, TR0, TR1, TR2]) ForTimes(times int) *retry1to3[TA0, TR0, TR1, TR2] {
@@ -2716,7 +2716,7 @@ func Try1to2[TA0 any, TR0 any, TR1 any](f func1to2[TA0, TR0, TR1]) *retry1to2[TA
 	return &retry1to2[TA0, TR0, TR1]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry1to2[TA0, TR0, TR1]) ForTimes(times int) *retry1to2[TA0, TR0, TR1] {
@@ -2753,7 +2753,7 @@ func Try1to1[TA0 any, TR0 any](f func1to1[TA0, TR0]) *retry1to1[TA0, TR0] {
 	return &retry1to1[TA0, TR0]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry1to1[TA0, TR0]) ForTimes(times int) *retry1to1[TA0, TR0] {
@@ -2789,7 +2789,7 @@ func Try1to0[TA0 any](f func1to0[TA0]) *retry1to0[TA0] {
 	return &retry1to0[TA0]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry1to0[TA0]) ForTimes(times int) *retry1to0[TA0] {
@@ -2824,7 +2824,7 @@ func Try0to8[TR0 any, TR1 any, TR2 any, TR3 any, TR4 any, TR5 any, TR6 any, TR7 
 	return &retry0to8[TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry0to8[TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7]) ForTimes(times int) *retry0to8[TR0, TR1, TR2, TR3, TR4, TR5, TR6, TR7] {
@@ -2867,7 +2867,7 @@ func Try0to7[TR0 any, TR1 any, TR2 any, TR3 any, TR4 any, TR5 any, TR6 any](f fu
 	return &retry0to7[TR0, TR1, TR2, TR3, TR4, TR5, TR6]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry0to7[TR0, TR1, TR2, TR3, TR4, TR5, TR6]) ForTimes(times int) *retry0to7[TR0, TR1, TR2, TR3, TR4, TR5, TR6] {
@@ -2909,7 +2909,7 @@ func Try0to6[TR0 any, TR1 any, TR2 any, TR3 any, TR4 any, TR5 any](f func0to6[TR
 	return &retry0to6[TR0, TR1, TR2, TR3, TR4, TR5]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry0to6[TR0, TR1, TR2, TR3, TR4, TR5]) ForTimes(times int) *retry0to6[TR0, TR1, TR2, TR3, TR4, TR5] {
@@ -2950,7 +2950,7 @@ func Try0to5[TR0 any, TR1 any, TR2 any, TR3 any, TR4 any](f func0to5[TR0, TR1, T
 	return &retry0to5[TR0, TR1, TR2, TR3, TR4]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry0to5[TR0, TR1, TR2, TR3, TR4]) ForTimes(times int) *retry0to5[TR0, TR1, TR2, TR3, TR4] {
@@ -2990,7 +2990,7 @@ func Try0to4[TR0 any, TR1 any, TR2 any, TR3 any](f func0to4[TR0, TR1, TR2, TR3])
 	return &retry0to4[TR0, TR1, TR2, TR3]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry0to4[TR0, TR1, TR2, TR3]) ForTimes(times int) *retry0to4[TR0, TR1, TR2, TR3] {
@@ -3029,7 +3029,7 @@ func Try0to3[TR0 any, TR1 any, TR2 any](f func0to3[TR0, TR1, TR2]) *retry0to3[TR
 	return &retry0to3[TR0, TR1, TR2]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry0to3[TR0, TR1, TR2]) ForTimes(times int) *retry0to3[TR0, TR1, TR2] {
@@ -3067,7 +3067,7 @@ func Try0to2[TR0 any, TR1 any](f func0to2[TR0, TR1]) *retry0to2[TR0, TR1] {
 	return &retry0to2[TR0, TR1]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry0to2[TR0, TR1]) ForTimes(times int) *retry0to2[TR0, TR1] {
@@ -3104,7 +3104,7 @@ func Try0to1[TR0 any](f func0to1[TR0]) *retry0to1[TR0] {
 	return &retry0to1[TR0]{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry0to1[TR0]) ForTimes(times int) *retry0to1[TR0] {
@@ -3140,7 +3140,7 @@ func Try0to0(f func0to0) *retry0to0 {
 	return &retry0to0{
 		backoff:     Constant(0),
 		f:           f,
-		maxAttempts: 0,
+		maxAttempts: 1,
 	}
 }
 func (retry *retry0to0) ForTimes(times int) *retry0to0 {

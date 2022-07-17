@@ -93,7 +93,7 @@ func appendFile(f *File, a int, b int) {
 			Return(
 				Op("&").Id(structName).Types(typesNamesAll...).Values(Dict{
 					Id("f"):           Id("f"),
-					Id("maxAttempts"): Lit(0),
+					Id("maxAttempts"): Lit(1),
 					Id("backoff"):     Id("Constant").Call(Lit(0)),
 				}),
 			),
@@ -201,7 +201,7 @@ func appendFile00Fix(f *File, a int, b int) {
 			Return(
 				Op("&").Id(structName).Values(Dict{
 					Id("f"):           Id("f"),
-					Id("maxAttempts"): Lit(0),
+					Id("maxAttempts"): Lit(1),
 					Id("backoff"):     Id("Constant").Call(Lit(0)),
 				}),
 			),
