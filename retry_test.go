@@ -59,6 +59,18 @@ func TestRetry_pointer(t *testing.T) {
 	assert.NoError(t, err)
 }
 
+func Test00Fix(t *testing.T) {
+	c := 0
+	err := Try0to0(func() error {
+		if c == testRetryCount {
+			return nil
+		}
+		c++
+		return errors.New("random.error")
+	}).ForTimes(10).Run()
+	assert.NoError(t, err)
+}
+
 var noOptimize = 0
 
 func BenchmarkRetryAlloc(b *testing.B) {
